@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/********** NAVBAR CSS START **********/
+
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #f47d28;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/********** NAVBAR CSS END **********/
+
+
+
+/********** BANNER CSS START **********/
+
+.banner-card {
+    position: relative;
+    margin-bottom: 0px;
+    background-color: black;
+}
+
+.banner-card img{
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    padding: 20px;
+    animation: fade-down 1.5s;
+}
+
+.banner-text h4 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.banner-text p {
+    font-size: 25px;
+}
+@media (max-width: 800px) {
+    .banner-text {
+        position: absolute;
+        top: 20%;
+        color: #fff;
+        padding: 10px;
+    }
+    
+    .banner-text h4 {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .banner-text p {
+        font-size: 10px;
+    }
+}
+
+/********** BANNER CSS END **********/
+
+
+
+
+/********** ANIMATIONS START **********/
+
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+/********** ANIMATIONS END **********/
+
+
+/********** OUR SERVICES SECTION START **********/
+
+.service-section {
+    background-color: black;
+    margin-top: 0px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.section-heading {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.services-card {
+    width: 350px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.services-card:hover {
+    transform: translateY(-20px);
+}
+
+.services-card i {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #db8234;
+}
+
+
+.services-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.services-card p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+    .services-cards {
+        flex-direction: column;
+        align-items: center;        
+    }
+}
+
+/********** OUR SERVICES SECTION END **********/
+
+
+
+
+/********** CONTACT PAGE START **********/
+
+
+
+
+
+
+
+
+
+/********** CONTACT PAGE END **********/
